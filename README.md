@@ -1,73 +1,130 @@
-# React + TypeScript + Vite
+# ⌚ Premium Watch Showcase
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React product showcase app that displays premium watches using data fetched from a public API.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+# ✨ Features
 
-## React Compiler
+- Fetches real product data from API
+- Displays premium watch collection
+- Loading state handling
+- Dynamic product rendering
+- Reusable React components
+- Built with React + TypeScript
+- Beginner-friendly project structure
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+# 🚀 Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- React
+- TypeScript
+- Vite
+- Fetch API
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+# 📸 Project Screenshots
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Demo 1
+
+![Demo 1](./public/demo1.png)
+
+---
+
+## Demo 2
+
+![Demo 2](./public/demo2.png)
+
+---
+
+# 📂 Folder Structure
+
+```bash
+src/
+├── components/
+│   └── ProductCard.tsx
+│
+├── types/
+│   └── product.ts
+│
+├── App.tsx
+│
+└── main.tsx
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+# ⚙️ Installation
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 1. Clone the repository
+
+```bash
+git clone <your-repository-url>
 ```
+
+---
+
+## 2. Move into project folder
+
+```bash
+cd project-name
+```
+
+---
+
+## 3. Install dependencies
+
+Using pnpm:
+
+```bash
+pnpm install
+```
+
+---
+
+## 4. Run development server
+
+```bash
+pnpm dev
+```
+
+---
+
+# 🌐 API Used
+
+```bash
+https://api.freeapi.app
+```
+
+---
+
+# 📚 What I Learned
+
+- React fundamentals
+- useState hook
+- useEffect hook
+- Fetching API data
+- Component-based architecture
+- Props in React
+- TypeScript basics in React
+- Conditional rendering
+- Dynamic UI rendering using map()
+
+---
+
+## ✨ Author
+
+**Ashish Kumar Jha**  
+📍 India • Full Stack Developer
+
+---
+
+## 📬 Contact
+
+- GitHub: https://github.com/Ashishjha013
+- LinkedIn: https://www.linkedin.com/in/ashishjha13
+- Email: ashishjha1304@gmail.com
+
+---
